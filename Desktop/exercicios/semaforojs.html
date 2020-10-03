@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function ligaSinal( luz ) 
+        {
+            var resultado = ''; 
+            if ( luz == 'Verde' )
+            {
+                resultado =  'Passe'
+            }
+            else if ( luz = 'Amarelo' )
+            {
+                resultado =  'Desacelere'
+            }
+            else if ( luz == 'Vermelho' )
+            {
+                resultado =  'Pare!!!'
+            }
+            return resultado;
+        }
+
+        document.write( ligaSinal( prompt('Que luz aparece?') ) + "<br>");
+
+    </script>
+
+
+</body>
+</html>

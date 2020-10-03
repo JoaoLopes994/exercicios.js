@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+                function calcula_imposto (valor) {
+                        var resultado = Math.round(valor * (8.9/100) ) ;
+                        return resultado; 
+                }
+
+                function calcula_lucro (valor, custo, imposto) {
+                        var resultado2 = Math.round(( (valor - custo) - imposto) );
+                        return resultado2; 
+                }
+
+                var custo = prompt("custo da pizza"); 
+                var valor = prompt("valor da pizza"); 
+                var nome = prompt("nome da pizza"); 
+                
+                document.write("Para a pizza " + nome + " o lucro líquido é de R$ " + calcula_lucro(valor,custo, calcula_imposto(valor) ) + " e o imposto é de R$ " + calcula_imposto(valor) + "." );
+
+
+
+        </script>
+</html>

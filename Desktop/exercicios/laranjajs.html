@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function distr_laranjas( quant_laranjas, quant_vizinhos ) 
+        {
+
+            var laranjas_unidade = quant_laranjas / quant_vizinhos ;
+            return (Math.trunc(laranjas_unidade) + "<br>" );  
+        }
+
+        function sobra_laranjas( quant_laranjas, quant_vizinhos ) 
+        {
+            var sobras_de_laranjas = quant_laranjas % quant_vizinhos ;
+            return sobras_de_laranjas
+        }
+        document.write( distr_laranjas ( 12, 5 ) );
+        document.write( sobra_laranjas ( 12, 5 ) );
+        
+   </script>
+    
+</body>
+</html>
