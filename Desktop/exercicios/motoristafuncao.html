@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorista</title>
+</head>
+<body>
+
+    <script>
+            function disponibilidade_idade( idade_user, idade_permitida ) 
+            {
+
+                if ( idade_user >= idade_permitida ) 
+                {
+                   return "Você pode dirigir";
+                } else {
+                    return "Você não pode dirigir";
+
+                }
+            }
+
+            function mostra( frase ){
+                document.write( frase + "<br>" );
+            } 
+
+            function teste_na_tela( idade_user, idade_permitida) {
+
+                var dirigir = teste_na_tela( idade_user,idade_permitida);
+                mostra( dirigir );
+            }
+
+            var idade_user = prompt( 'Qual a sua idade?' );
+
+            var idade_minima_brasil = 18;
+            var idade_minima_eua = 21;
+
+            disponibilidade_idade( idade_user, idade_minima_brasil );
+            disponibilidade_idade( idade_user, idade_minima_eua );
+
+            mostra(dirigir);
+
+
+    </script>
+    
+</body>
+</html>

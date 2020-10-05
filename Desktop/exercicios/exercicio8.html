@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu bebidas</title>
+        <body>   
+
+            <script>
+                function mostra_menu(frase) {
+                    document.write("<p>1-Refrigerante</p><p>2-Agua</p><p>3-Suco</p><p>4-Cerveja</p></br>");
+                }
+
+                mostra_menu();
+
+                var numero_pedido = prompt("1-Refrigerante\n2-Agua\n3-Suco\n4-Cerveja");
+
+                if ( numero_pedido == 1 ) {
+                    document.write("Refrigerante")
+                }
+                else if ( numero_pedido == 2 ) {
+                    document.write("Agua")
+                }
+                else if ( numero_pedido == 3 ) {
+                    document.write("Suco")
+                }
+                else if ( numero_pedido == 4 ) {
+                    document.write("Cerveja")
+                }
+                else  {
+                    document.write("Como?")
+                }
+
+            </script>
+        </body>
+</html>
