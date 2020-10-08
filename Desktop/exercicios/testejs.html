@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        
+        var array1 = [1, 2, 3];
+        var array2 = [4, 4, 4];
+
+        function somaArray (arr1, arr2) 
+        {
+            var lista1 = 0;
+            var lista2 = 0;
+
+            for (var i = 0; i < arr1.length; i++) {
+                lista1 += arr1 [i];
+            }
+
+            for (var i= 0; i < arr2.length; i++) {
+                lista2 += arr2 [i];
+            }
+
+            return lista1 + lista2;
+        }
+
+        console.log(somaArray(array1, array2) )
+ 
+    </script>
+    
+</body>
+</html>

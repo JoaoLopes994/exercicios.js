@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function multiplos (valor) 
+        {
+            var soma = 0;
+            for (var i= 0; i < valor; i++) {
+                if (i % 3=== 0 || i % 5 === 0) {
+                    soma += i 
+                } else if (i < 0) {
+                    return 0;
+                }
+            }
+            return soma 
+        }
+        console.log(multiplos(10))
+    </script>
+</body>
+</html>
