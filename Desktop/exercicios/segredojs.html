@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Game</title>
+</head>
+<body>
+    <h1>Jogo dos segredos</h1>
+    <p>Você terá 3 chances de descobrir o segredo mágico no campo de pesquisa, que está entre os números "1 e 10".<br> Boa sorte! =)</p>
+    <input/> 
+    <button>Tente descobrir um dos 3 segredos.</button>
+    <script> 
+
+        var segredos = [1,7,8];
+
+        var input = document.querySelector("input");
+        input.focus();
+
+        function verificar() {
+
+            var achou = false;
+
+            for(var posicao = 0; posicao < segredos.length; posicao++) {
+
+                if(input.value == segredos[posicao]) {
+
+                    alert("Acertou, miserávi!! =) ");
+                    achou = true;
+                    break;
+                }
+
+                if (achou == false) {
+                    alert("Errou!! :P ");
+                    break;
+                }
+            }
+            input.value = "";
+            input.focus();
+
+        }
+        
+        var button = document.querySelector("button");
+
+        button.onclick = verificar;
+    
+    </script>
+    
+</body>
+</html>

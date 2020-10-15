@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo adivinhação </title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha() {
+
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var numeroAcerto = Math.round(Math.random() * 10);
+
+        var chutes = parseInt(prompt("Olá! Você está no jogo 'Adivinhe o número!' Você terá 3 chances para tentar acertar o número mágico. =)"));
+
+        if(chutes == numeroAcerto) 
+        {
+            mostra("Acertou, miserávi! ;P");
+        }
+        else 
+        {
+            mostra("Errou! O número mágico é " + numeroAcerto);
+        }
+
+    </script>         
+</body>
+</html>
