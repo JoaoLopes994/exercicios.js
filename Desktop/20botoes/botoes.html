@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="botoesCSS.css">
+    <title>Botões Dom</title>
+</head>
+<body>
+    <script>
+
+        function Botao (quant) {
+            for (var i = 0; i <= quant; i++) {
+                var btn = document.createElement("BUTTON");
+                btn.innerText = `Botão número: ${i}`;
+                document.body.appendChild(btn);
+            }; 
+        };
+
+        Botao(19);    
+    </script>
+</body>
+</html>

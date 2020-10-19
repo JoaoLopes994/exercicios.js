@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgray;
+}
+
+button {
+    width: 400px;
+    margin: 5px;
+    background-color: darkslategray;
+}
