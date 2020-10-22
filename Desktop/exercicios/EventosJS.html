@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+      
+    <script>
+        //CRIANDO PRIMEIRO ELEMENTO NO BODY, H1
+        var texto = document.createElement("h1");
+        
+        // DEFINE O VALOR DO H1 CRIADO NO DOM.
+        texto.textContent = "SALVA";
+        
+        //TORNA O H1 = TEXTO FILHO DO BODY
+        document.body.appendChild(texto);
+        
+        //ESTILO DECLARADO PELO JS VISTO NA MONITORIA
+        texto.style.margin = "30px";
+        
+        //ESCUTA O PRIMEIRO EVENTO, MOUSE EM CIMA
+        texto.addEventListener("mouseover", function() {
+            texto.textContent = "RAXGA"
+        })
+
+        //SEGUNDO EVENTO, MOUSE SAI DE CIMA
+        texto.addEventListener("click", function() {
+            texto.textContent = "WOW"
+        })
+        // ULTIMO EVENTO! 
+        texto.addEventListener("mouseleave", function() {
+            texto.textContent = "SALVOU DE NOVO"
+        })
+    </script>
+</body>
+</html>
