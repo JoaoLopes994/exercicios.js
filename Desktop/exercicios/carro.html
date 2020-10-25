@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro</title>
+</head>
+<body>
+    
+    <script>
+        let carro = {
+            rodas: ["fe", "fd", "te", "td"],
+            janelas: ["fe", "fd", "te", "td"],
+            lanternas: ["te", "td"],
+            farois: ["fe", "fd"],
+            portas: ["fe", "fd", "te", "td", "pm", "capô"],
+            marchas: ["m1","m2","m3","m4","m5","mRé",],
+
+            acelera: function ( praFrente) {
+                if ( praFrente )
+                    console.log("vruuuum")
+                else 
+                console.log("BREAK")
+            },
+            marchaRe: function ( praTras ) {
+                if ( praTras )
+                    console.log("Ativa marcha ré")
+                else 
+                console.log("Trocar caixa de marcha!!!")
+            },
+        };
+        console.log(carro);
+    </script>
+</body>
+</html>

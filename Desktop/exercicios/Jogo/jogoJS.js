@@ -53,7 +53,7 @@ function resp3Sim() {
 
 function resp3Nao() {
     var body = document.querySelector("body")
-    body.innerHTML += `<p><strong>FORA DO CAMINHO VOCÊ ESTÁ, HM</strong></p>`
+    body.innerHTML += `<h1><strong>FORA DO CAMINHO VOCÊ ESTÁ, HM</strong></h1>`
     body.innerHTML += `<br><button onclick="location.reload()">Jedi não és, hm.</button>`
     body.innerHTML += `<img src="yodadead.gif" alt="yoda">`
 }
