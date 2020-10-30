@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra</title>
+</head>
+<body>
+    <script>
+            function cifraComCifraDeCesar(deslocamento, mensagem)
+        {
+            var mensagemEncriptada = "";
+
+            for (let letra of mensagem){
+
+            if (deslocamento >= 26){
+            }
+            var letraNumber = letra.charCodeAt() + deslocamento;
+
+            if (letraNumber >= 90){
+                letraNumber = letraNumber - 26;
+            }
+
+            mensagemEncriptada +=  String.fromCharCode(letraNumber)
+        }
+
+        return mensagemEncriptada;
+        }
+
+        console.log(cifraComCifraDeCesar(1, "JOAO"))
+
+            function decifraCifraDeCesar( deslocamento, mensagemCifrada )
+        {
+            var mensagemDecifrada = "";
+            
+            for (let letra of mensagemDecifrada){
+
+            if (deslocamento >= 26){
+            }
+            var letraNumber = letra.charCodeAt() + deslocamento;
+
+            if (letraNumber >= 90){
+                letraNumber = letraNumber - 26;
+            }
+
+            mensagemDecifrada +=  String.fromCharCode(letraNumber)
+            }
+
+
+            return mensagemDecifrada;
+        }
+        console.log(decifraCifraDeCesar(1, "KPBP"))
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    background: url("background.inscricao.jpg")
+
+    
+
+
+}
+
+h1 {
+    font-family: 'Gill Sans MT';
+    font-display: bold;
+    margin-left: 16cm;
+
+}
+
+.Info {
+    font-style: white;
+    display: inline-block;
+    margin-left: 13cm;
+    font-family: 'Lucida Sans';
+
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
+
+}
+
+.botao {
+    background-color: #606060;
+    font-family: 'Gill Sans MT';
+    font-display: bold;
+    font-weight: bolder;
+
+}
+
+form :hover {
+    color: #fad000;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+     background: url("footer.jpg")
+    
+    
+
+}
