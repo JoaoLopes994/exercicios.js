@@ -13,7 +13,7 @@ function jogar() {
 
 function resp1Sim() {
     var body = document.querySelector("body")
-    body.innerHTML += `<h1>Sabemos que de luta você entende.<br> E na pandemia galática, você saiu de máscara?</h1>`
+    body.innerHTML += `<h1>Sabemos que, de luta você entende.<br> E na pandemia galática, você saiu de máscara?</h1>`
     body.innerHTML += `<p>E lembre-se, seja discreto!</p>`
     body.innerHTML += `<button onclick="resp2Sim()">Sim</button> 
                        <button onclick="resp2Nao()">Nao</button>`
@@ -21,8 +21,9 @@ function resp1Sim() {
 function resp1Nao() {
     var body = document.querySelector("body")
     body.innerHTML += `<h1><strong>FORA DO CAMINHO VOCÊ ESTÁ, HM</strong></h1>`
-    body.innerHTML += `<br><p><strong>Jedi não és, hm.</strong></p>`
-    body.innerHTML += `<img src="Jogo/yodadead.gif">`
+    body.innerHTML += `<br><button onclick="location.reload()">Jedi não és, hm.</button>`
+    body.innerHTML += `<img src="Jogo/img/yodadead.gif">`
+    document.body.appendChild(body);
 }
 
 //SEGUNDA ETAPA
@@ -33,13 +34,15 @@ function resp2Sim() {
     body.innerHTML += `<p>Se discreto não foi, problemas trará, HM!</p>`
     body.innerHTML += `<button onclick="resp3Sim()">Sim</button>
                        <button onclick="resp3Nao()">Nao</button>` 
+                       
 }
 
 function resp2Nao() {
     var body = document.querySelector("body")
     body.innerHTML += `<h1><strong>FORA DO CAMINHO VOCÊ ESTÁ, HM</strong></h1>`
-    body.innerHTML += `<p>Jedi não és, hm.</p>`
-    body.innerHTML += `<p img src="Jogo/yodadead.gif" alt="yoda"></p>`
+    body.innerHTML += `<br><button onclick="location.reload()">Jedi não és, hm.</button>`
+    body.innerHTML += `<p img src="Jogo/img/yodadead.gif" alt="yoda"></p>`
+    document.body.appendChild(body);
 }
 
 //TERCEIRA ETAPA
@@ -47,7 +50,8 @@ function resp2Nao() {
 function resp3Sim() {
     var body = document.querySelector("body")
     body.innerHTML += `<h1>COMIDA TROUXE, E PERCEBIDO NÃO FOI. NO CAMINHO VOCÊ ESTÁ, HM!  </strong> </h1> `
-    body.innerHTML += `<p><img src="Jogo/vocejedi.gif" alt="jedi"></p>`    
+    body.innerHTML += `<p><img src="Jogo/img/vocejedi.gif"></p>`
+    document.body.appendChild(body);    
     
 }
 
@@ -55,6 +59,6 @@ function resp3Nao() {
     var body = document.querySelector("body")
     body.innerHTML += `<h1><strong>FORA DO CAMINHO VOCÊ ESTÁ, HM</strong></h1>`
     body.innerHTML += `<br><button onclick="location.reload()">Jedi não és, hm.</button>`
-    body.innerHTML += `<img src="yodadead.gif" alt="yoda">`
+    body.innerHTML += `<img src="Jogo/img/yodadead.gif" alt="yoda">`
 }
 
